@@ -9,7 +9,8 @@
     "start": "node index.js"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["jest-extended"]
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
+    "jest-extended": "^0.11.4",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
   },
